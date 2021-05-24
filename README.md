@@ -1,5 +1,4 @@
 # Development
-![dog_wordcloud1](https://user-images.githubusercontent.com/82144756/116040687-4c03d180-a6a7-11eb-8858-ad6a19b1f3f3.png)
 
 하루에 최소 한개씩은 코딩 문제를 풀도록 노력하고 있습니다.
 
