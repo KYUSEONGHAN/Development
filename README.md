@@ -7,3 +7,5 @@
 현재 python, mysql로 Backjoon Online Judge, Programmers, CodeUp, HackeRrank 문제들을 풀고 있습니다.
 
 감사합니다.
+
+![dog_wordcloud1](https://user-images.githubusercontent.com/82144756/116040687-4c03d180-a6a7-11eb-8858-ad6a19b1f3f3.png)
