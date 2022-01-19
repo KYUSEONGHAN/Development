@@ -19,10 +19,7 @@ def solve(n, m, matrix_a, matrix_b):
                 othello(matrix_a, x, y)
                 cnt += 1
 
-    if matrix_a != matrix_b:
-        return -1
-
-    return cnt
+    return -1 if matrix_a != matrix_b else cnt
 
 if __name__ == '__main__':
     n, m = map(int, input().split())
