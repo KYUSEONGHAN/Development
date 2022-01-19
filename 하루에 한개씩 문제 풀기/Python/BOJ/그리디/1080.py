@@ -1,6 +1,5 @@
 # boj, 1080:행렬, python3
 import sys
-
 input = sys.stdin.readline
 
 def othello(matrix, x, y):
