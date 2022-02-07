@@ -9,8 +9,8 @@ graph = [list(map(int, input())) for i in range(n)]
 dx = [-1, 0, 0, 1]
 dy = [0, -1, 1, 0]
 
-def dfs(x, y):
-    # dfs 구현을 위해 queue 구현
+def bfs(x, y):
+    # bfs 구현을 위해 queue 구현
     queue = deque()
     queue.append((x, y))
 
