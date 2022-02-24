@@ -1,5 +1,5 @@
 # https://www.acmicpc.net/problem/4963
-# boj, 4964: 섬의 개수, python3
+# boj, 4963: 섬의 개수, python3
 from sys import stdin, setrecursionlimit
 
 # 재귀 호출로 인한 시간 초과를 피하기 위해 최대 재귀 깊이 재설정
