@@ -36,4 +36,4 @@ def bfs(x, y):
     return graph[n - 1][m - 1]
 
 if __name__ == '__main__':
-    print(dfs(0, 0))
+    print(bfs(0, 0))
