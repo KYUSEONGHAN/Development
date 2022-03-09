@@ -1,6 +1,5 @@
 # Development
 
-
 하루에 최소 한개씩은 코딩 문제를 풀도록 노력하고 있습니다.
 
 문제 풀이는 제 https://velog.io/@cosmos 에 들어오시면 확인하실 수 있으며
