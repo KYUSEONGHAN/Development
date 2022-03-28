@@ -27,6 +27,17 @@ def union_parent(parent, a, b):
     else:
         parent[a] = b
 
+def solve(x: int, a: int, b: int):
+    # 합집합은 a가 포함되어 있는 집합과 b가 포함되어 있는 집합을 합친다는 의미
+    if x == 0:
+        union_parent(parent, a, b)
+    # a와 b가 포함되어 있는지를 확인하는 연산
+    else:
+        if find_parent(parent, a) == find_parent(parent, b):
+            print('YES')
+        else:
+            print('NO')
+
 
 if __name__ == '__main__':
     # 집합의 개수 n, 연산의 개수 m
@@ -39,12 +50,5 @@ if __name__ == '__main__':
         # x = 0 -> 합집합, x = 1 -> 포함되어 있는지를 확인하는 연산
         x, a, b = map(int, input().split())
 
-        # 합집합은 a가 포함되어 있는 집합과 b가 포함되어 있는 집합을 합친다는 의미
-        if x == 0:
-            union_parent(parent, a, b)
-        # a와 b가 포함되어 있는지를 확인하는 연산
-        else:
-            if find_parent(parent, a) == find_parent(parent, b):
-                print('YES')
-            else:
-                print('NO')
+        # 연산을 수행
+        solve(x, a, b)
