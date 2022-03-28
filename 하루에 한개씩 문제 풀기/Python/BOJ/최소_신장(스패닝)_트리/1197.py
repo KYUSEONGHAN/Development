@@ -6,7 +6,7 @@ input = sys.stdin.readline  # 변수의 입력 범위가 크므로 입력 속도
 sys.setrecursionlimit(100000)  # 런타임 에러를 피하기 위해 최대 재귀 깊이 재설정
 
 # 특정 원소가 속한 집합을 찾기
-def find_parent(parent, x):
+def find_parent(parent: list, x: int) -> int:
     # 루트 노드가 아니라면, 루트 노드를 찾을 때까지 재귀적으로 호출
     if parent[x] == x:
         return x
@@ -15,7 +15,7 @@ def find_parent(parent, x):
     return parent[x]  # 경로 압축
 
 # 두 원소가 속한 집합을 합치기
-def union_parent(parent, a, b):
+def union_parent(parent: list, a: int, b: int):
     a = find_parent(parent, a)
     b = find_parent(parent, b)
 
