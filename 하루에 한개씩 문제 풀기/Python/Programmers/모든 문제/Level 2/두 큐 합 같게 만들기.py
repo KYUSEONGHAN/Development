@@ -4,12 +4,16 @@ from collections import deque
 
 def solution(queue1: list, queue2: list) -> int:
     queue1, queue2 = deque(queue1), deque(queue2)
-    answer = 0
+    sum1, sum2, answer = sum(queue1), sum(queue2), 0
 
     for _ in range(len(queue1) * 3):
-        if sum(queue1) > sum(queue2):
+        if sum1 > sum2:
+            sum1 -= queue1[0]
+            sum2 += queue1[0]
             queue2.append(queue1.popleft())
-        elif sum(queue1) < sum(queue2):
+        elif sum1 < sum2:
+            sum1 += queue2[0]
+            sum2 -= queue2[0]
             queue1.append(queue2.popleft())
         else:
             return answer
