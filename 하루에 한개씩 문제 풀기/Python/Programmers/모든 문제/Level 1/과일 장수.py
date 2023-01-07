@@ -1,5 +1,5 @@
 # https://school.programmers.co.kr/learn/courses/30/lessons/135808
-# programmers, level0: 과일 장수, python3
+# programmers, level1: 과일 장수, python3
 def solution(k: int, m: int, score: list) -> int:
     answer = 0
     # score 내림차순으로 재정렬
