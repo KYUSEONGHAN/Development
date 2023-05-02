@@ -1,19 +1,15 @@
 from typing import List
 
-
-def solve(n: int, m: int, a_list: List[int], b_list: List[int]) -> int:
+def get_max_value(n: int, m: int, a_list: List[int], b_list: List[int]) -> int:
     result = 0
 
-    if n >= m:
-        for i in range(0, n-m+1):
-            nums = a_list[i:i+m]
-            result = max(result, sum([x*y for x, y in zip(nums, b_list)]))
-    else:
-        for i in range(0, m-n+1):
-            nums = b_list[i:i+n]
-            result = max(result, sum([x*y for x, y in zip(nums, a_list)]))
+    for i in range(0, n - m + 1):
+        result = max(result, sum([x * y for x, y in zip(a_list[i:i + m], b_list)]))
 
     return result
+
+def solve(n: int, m: int, a_list: List[int], b_list: List[int]) -> int:
+    return get_max_value(n, m, a_list, b_list) if n >= m else get_max_value(m, n, a_list, b_list)
 
 if __name__ == '__main__':
     T = int(input())
